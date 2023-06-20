@@ -1,10 +1,9 @@
 import matplotlib.pyplot as plt
 from math import sqrt, inf
 import numpy as np
+from total_points import *
 from plot import *
 
-
-total_points = []
 class Point:
     def __init__(self, x, y):
         self.x = x

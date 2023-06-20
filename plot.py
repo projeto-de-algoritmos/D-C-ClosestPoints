@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from closest_points import total_points
-
+from total_points import *
 
 def plot_points(points, divisions=None, current_points=None, current_quadrant=None):
     print(current_quadrant)
