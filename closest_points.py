@@ -13,7 +13,6 @@ class Point:
 def euclidean_distance(point1, point2):
     return sqrt(((point1.x - point2.x) ** 2) + ((point1.y - point2.y) ** 2))
 
-
 def merge_by_y(left, right):
     merged = []
     i, j = 0, 0
@@ -63,15 +62,24 @@ def closest_pair(points):
         else:
             closest = right_closest
             closest_d = right_distance
-    print("CLOSEST", closest)
+    if closest != ():
+        print("CLOSEST -> (", closest[0].x, ",", closest[0].y, ") - (", closest[1].x, ",", closest[1].y, ")")
+    else:
+        print("CLOSEST -> ", closest)
     plot_points(points, divisions=closest,
         current_points=[mid_point], current_quadrant=(points[0], points[-1]))
     points_by_y = merge_by_y(left_part, right_part)
     
     strip_points = [point for point in points_by_y if abs(point.x - points_by_y[mid].x) < closest_d]
     current_closest_distance = closest_d
-    print("LEFT", left_closest)
-    print("RIGHT", right_closest)
+    if left_closest != ():
+        print("LEFT -> (", left_closest[0].x, ",", left_closest[0].y, ") - (", left_closest[1].x, ",", left_closest[1].y, ")")
+    else:
+        print("LEFT -> ", left_closest)
+    if right_closest != ():
+        print("RIGHT -> (", right_closest[0].x, ",", right_closest[0].y, ") - (", right_closest[1].x, ",", right_closest[1].y, ")")
+    else:
+        print("RIGHT -> ", right_closest)
     current_closest_pair = (left_closest, right_closest)[right_distance < left_distance]
 
     for i in range(len(strip_points)):
@@ -130,8 +138,8 @@ while len(total_points) < 50:
 total_points = sorted(total_points, key=lambda x: x.x)
 plot_graph(total_points)
 distance, closest = closest_pair(total_points)
-print(distance, closest)
-
+print(distance, "(", closest[0].x, ",", closest[0].y, ") - (", closest[1].x, ",", closest[1].y, ")")
+input()
 
 
 
