@@ -30,7 +30,7 @@ def plot_graph(points, divisions=None, current_points=None, current_quadrant=Non
             plt.plot([div[0][0], div[1][0]], [div[0][1], div[1][1]], color='green')
     plt.xlabel('X')
     plt.ylabel('Y')
-    plt.suptitle('Divisões e comparações do Par de Pontos Mais Próximos')
+    plt.title('Divisões e comparações do Par de Pontos Mais Próximos')
     plt.show()
     plt.legend()
     plt.grid(True)
