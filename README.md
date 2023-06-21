@@ -1,45 +1,43 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# Closest Points
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 4<br>
+**Conteúdo da Disciplina**: Dividir e Conquistar<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 20/0013181  | Adne Moretti Moreira |
+| 20/0018205  | Gabriel Moretti de Souza |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+
+O projeto consiste no algoritmo de par de pontos mais próximos utilizando da técnica de dividir e conquistar.
+Inicialmente 50 par de números são gerados aleatoriamente e um gráfico é plotado com a ferramenta matplotlib do python, com todos os pontos gerados anteriormente.  A cada passo recursivo que o algoritmo é executaodo o gráfico é atualizado, mostrando de forma visual e dinâmica a maneira que o algoritmo funciona. Isso é importante para o aprendizado do funcionamento do algoritmo, sendo assim, o projeto pode ser utilizado para fins educativos.
+
+Ao final do programa, é apresentado o par de pontos mais próximo que foi encontrado. 
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Python<br>
+**Framework**: - <br>
+
+Para iniciar, será necessário instalar em sua máquina ```python3```, e, dentro do python, utilizando o comando ```pip install matplotlib``` para instalação, será necessária também a biblioteca matplotlib para criar e manipular o gráfico demonstrado. Com isso, será possível executar o código utilizando o comando:
+
+```
+python closest_points.py
+```
+
+ou
+
+```
+python3 closest_points.py
+```
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Após o programa ser executado, ele irá disponibilizar ao usuário uma visualização de todo o processo da técnica de par de pontos mais próximos do dividir e conquistar. Nesse momento, o usuário deverá observar e esperar o processo acabar. No terminal, também estará sendo descrito todo o processo, detalhando cada passo, os pares sendo trabalhados, etc.
 
-
-
+Ao terminar, o processo estará demonstrando o par de pontos mais próximos com uma linha azul entre eles, demonstrando assim o resultado do programa, ou seja, o par de pontos mais próximos dentre todos. O programa estará então aguardado um input do usuário no console, para apenas finalizar o programa.
 

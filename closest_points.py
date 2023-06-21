@@ -85,12 +85,17 @@ def closest_pair(points):
                 current_closest_pair = (strip_points[i], strip_points[j])
 
     return current_closest_distance, current_closest_pair
-    
+def verify_list(x): 
+    for point in total_points: 
+        if point.x == x: 
+            return False
+    return True
+
 while len(total_points) < 50:
     x = np.random.randint(1, 51)
     y = np.random.randint(1, 51)
-    
-    if ((x, y) not in total_points):
+
+    if verify_list(x):
         total_points.append(Point(x, y))
 
 total_points = sorted(total_points, key=lambda x: x.x)
