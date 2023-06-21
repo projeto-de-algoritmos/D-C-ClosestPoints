@@ -16,8 +16,17 @@ Inicialmente 50 par de números são gerados aleatoriamente e um gráfico é plo
 
 Ao final do programa, é apresentado o par de pontos mais próximo que foi encontrado. 
 
+## Vídeo
+
+[Link para o vídeo](https://youtu.be/-idURqyk7yw)
+
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+![Exemplo 1](assets/example1.png)
+
+![Exemplo 2](assets/example2.png)
+
+![Exemplo 3](assets/example3.png)
 
 ## Instalação 
 **Linguagem**: Python<br>
