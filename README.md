@@ -18,7 +18,7 @@ Ao final do programa, é apresentado o par de pontos mais próximo que foi encon
 
 ## Vídeo
 
-[Link para o vídeo](https://youtu.be/-idURqyk7yw)
+O vídeo se encontra no diretório principal desse repositório, em formato ".mp4".
 
 ## Screenshots
 
